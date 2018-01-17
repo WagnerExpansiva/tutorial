@@ -43,8 +43,9 @@
 </head>
 
 <body>
+
   <ons-splitter>
-    <ons-splitter-side id="menu" side="right" width="220px" collapse swipeable>
+    <ons-splitter-side id="menu" side="left" width="220px" collapse swipeable>
       <ons-page>
         <ons-list>
           <ons-list-item onclick="fn.load('home.html')" tappable>
@@ -70,7 +71,7 @@
         <div class="center">
           Splitter+Navigator
         </div>
-        <div class="right">
+        <div class="left">
           <ons-toolbar-button onclick="fn.open()">
             <ons-icon icon="md-menu"></ons-icon>
           </ons-toolbar-button>
@@ -86,7 +87,7 @@
       </div>
 
       <p style="text-align: center; opacity: 0.6; padding-top: 20px;">
-        Swipe left to open the menu!
+        Swipe right to open the menu!
       </p>
     </ons-page>
   </template>
@@ -98,11 +99,6 @@
           <ons-back-button>Back</ons-back-button>
         </div>
         <div class="center"></div>
-        <div class="right">
-          <ons-toolbar-button onclick="fn.open()">
-            <ons-icon icon="md-menu"></ons-icon>
-          </ons-toolbar-button>
-        </div>
       </ons-toolbar>
 
       <div style="text-align: center">
@@ -119,7 +115,7 @@
       </div>
 
       <p style="text-align: center; opacity: 0.6; padding-top: 20px;">
-        Swipe left to open the menu!
+        Swipe right to open the menu, still working
       </p>
     </ons-page>
   </template>
@@ -130,7 +126,7 @@
         <div class="center">
           Splitter+Navigator
         </div>
-        <div class="right">
+        <div class="left">
           <ons-toolbar-button onclick="fn.open()">
             <ons-icon icon="md-menu"></ons-icon>
           </ons-toolbar-button>
@@ -146,7 +142,7 @@
       </ons-list>
 
       <p style="text-align: center; opacity: 0.6; padding-top: 20px;">
-        Swipe left to open the menu!
+        Swipe right to open the menu!
       </p>
     </ons-page>
   </template>
@@ -156,11 +152,6 @@
       <ons-toolbar>
         <div class="left">
           <ons-back-button>Back</ons-back-button>
-        </div>
-        <div class="right">
-          <ons-toolbar-button onclick="fn.open()">
-            <ons-icon icon="md-menu"></ons-icon>
-          </ons-toolbar-button>
         </div>
       </ons-toolbar>
 
@@ -197,7 +188,7 @@
         <div class="center">
           Splitter+Navigator
         </div>
-        <div class="right">
+        <div class="left">
           <ons-toolbar-button onclick="fn.open()">
             <ons-icon icon="md-menu"></ons-icon>
           </ons-toolbar-button>
@@ -207,7 +198,7 @@
       <h2>Settings</h2>
 
       <p style="text-align: center; opacity: 0.6; padding-top: 20px;">
-        Swipe left to open the menu!
+        Swipe right to open the menu!
       </p>
     </ons-page>
   </template>
@@ -217,7 +208,7 @@
 
 <!-- info
 
-## Combining Splitter and Navigator
+## Combining Splitter and Navigator - Left
 
 A common Single-Page App pattern can be achieved by combining the `<ons-splitter>` and `<ons-navigator>` elements. This way you can have a side menu and provide stacked navigation in the main content.
 
